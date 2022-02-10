@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Beauty's Toxicity: Definition </title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Marky Miguel C. Baniqued">
+	<meta name="keywords" content="HTML, CSS">
+	<meta name="revised" content="06-11-2020">
+	<link rel="stylesheet" type="text/css" href="../css/cssWebpage1.css">
+	<link rel="icon" type="images/jpeg" href="../images/logo.png">
+</head>
+
+<body>
+	<header id="wrapper"> <!-- this is to ensure that every element is the same when zoomed in our out, except for the modals -->
+	<header class="header">
+		<aside class="headerlogo">
+			<img src="../images/logo.png" title="Beauty's Toxicity Logo" alt="Website Logo">
+		</aside>
+		<header class="headertext1">
+			<h1>Beauty's Toxicity</h1>
+		</header>
+		
+		<section class="wrap"> <!-- this code block is for the search bar. u can type into it, but the searching process itself does not execute -->
+			<article class="search">
+				<input type="text" class="searchTerm" placeholder="Search Bar">
+				<button type="submit" class="searchButton">
+					<i class="fa fa-search"></i>
+				</button>
+			</article>
+		</section>
+		
+		<nav class="backtohome"> <!-- this code block is for the hyperlink back to the homepage -->
+			<a href="../index.html">
+				<p>Back to Home =></p>
+			</a>
+		</nav>
+		
+		<aside class="headerlogo1">
+			<img src="../images/information.png" title="Information" alt="Information Logo">
+		</aside>
+		<nav class="headerlogo2"> <!-- this code block is for the hyperlink back to the homepage -->
+			<a href="../index.html">
+				<img src="../images/home.png" title="Back to Home" alt="Home Logo">
+			</a>
+		</nav>
+	</header>
+
+	<header class="categoryTitle"> <!-- this code block is for the title -->
+		<p>Unhealthy Beauty Standards: Definition</p>
+	</header>
+
+	<aside class="clearfix"> <!-- this code block is for the list of categories to be clicked on. modals will pop up with information -->
+		<article class="column menu">
+			<ul>
+				<li><button class="modal-button" href="#myModal1">Video</button></li>
+				<li><button class="modal-button" href="#myModal2">In-depth Definition</button></li>
+				<li><button class="modal-button" href="#myModal3">Gallery</button></li>
+			</ul>
+		</article>
+	</aside>
+
+	<section id="myModal1" class="modal"> <!-- this is for modal number 2 -->
+		<section class="modal-content">
+			<header class="modal-header">
+				<span class="close">×</span>
+				<h2>Unhealthy Beauty Standards: Video</h2>
+			</header>
+			<section class="modal-video-bg">
+				<aside class="modal-video">
+					<video width="800" height="450" controls autoplay>
+						<source src="../mmfiles/beautystandardsdocumentary.mp4" type="video/mp4">
+						<source src="../mmfiles/beautystandardsdocumentary.ogg" type="video/ogg">
+						Your browser does not support the video element.
+					</video>
+				</aside>
+			</section>
+			<footer class="modal-footer"> </footer>
+		</section>
+	</section>
+
+	<section id="myModal2" class="modal"> <!-- this code is used for the modals itself -->
+		<section class="modal-content">
+			<header class="modal-header">
+				<span class="close">×</span>
+				<h2>In-depth Definition</h2>
+			</header>
+			<section class="modal-body">
+				<p>Unhealthy Beauty Standards, is defined as the individual qualifications and tasks 
+				(looks wise) that people around the world are expected to meet in order 
+				to be seen as better people, rarely for their own benefit, and mostly 
+				for the benefit of society, as it is now commonly used in the vast world 
+				of professions, such as modelling, acting, etc. Unfortunately, females 
+				are subjected more to this sort of predicament because of the built 
+				foundation surrounding patriarchy that pull women and nonbinary people 
+				down to be frowned upon. Of course, this does not mean that men and 
+				people alike are not affected by these unnecessary standards, as people 
+				build unhealthy opinions on various people around the world anyway, 
+				regardless of their gender. These standards are mostly seen and regrettably 
+				promoted in media used for entertainment, such as films, movies, shows, 
+				and social media. It can also be seen in literature and writing, such as 
+				story books and magazines, or even in institutional systems such as the 
+				educational system and advertising. </p>
+				<p>Again, what are unhealthy beauty standards, and where do they come from? Beauty standards 
+				are established by society, which begins by establishing a sense of beauty by comparing 
+				one human being to another, and then establishes unrealistic standards. But why is it 
+				a problem? The true reason beauty standards are toxic is because they provide the 
+				impression that "beautiful" individuals are better than "ugly" ones, or that some traits 
+				are more appealing than others. Women are most affected by beauty standards across the 
+				world (they can also affect men as well). Beauty standards are akin to an unattainable mold 
+				into which you can never fit. To conform with these ideals, people use plastic and cosmetics 
+				to modify or mask undesirable traits. Beauty standards are like a sickness that spreads 
+				through people's minds like wildfire. </p>
+			</section>
+			<footer class="modal-footer"> </footer>
+		</section>
+	</section>
+
+	<section id="myModal3" class="modal"> <!-- this is for modal number 2 -->
+		<section class="modal-content">
+			<header class="modal-header">
+				<span class="close">×</span>
+				<h2>Unhealthy Beauty Standards: Gallery</h2>
+			</header>
+			<section class="modal-gallery-bg">
+				<aside class="modal-gallery">
+					<img src="../images/picture1.jpg" title="Girl with Face Covered with Picture" alt="Picture 1: Girl with Face Covered with Picture">
+					<img src="../images/picture2.jpg" title="Girl with Barely Anything on her Plate" alt="Picture 2: Girl with Barely Anything on her Plate">
+					<img src="../images/picture3.jpg" title="Mental Issues that Come with Unhealthy Beauty Standards" alt="Picture 3: Mental Issues that Come with Unhealthy Beauty Standards">
+					<img src="../images/picture4.jpg" title="Re-Invent Beauty Poster" alt="Picture 4: Re-Invent Beauty Poster">
+				</aside>
+			</section>
+			<footer class="modal-footer"> </footer>
+		</section>
+	</section>
+	</header>
+
+	<script>
+		<!-- this script is for getting the button for the model -->
+		var btn = document.querySelectorAll("button.modal-button");
+
+		<!-- this is to ensure we can ahve multiple modals -->
+		var modals = document.querySelectorAll('.modal');
+
+		<!-- this is for the modal close button -->
+		var spans = document.getElementsByClassName("close");
+
+		<!-- this is for the opening of the model itself -->
+		for (var i = 0; i < btn.length; i++) {
+			btn[i].onclick = function(e) {
+				e.preventDefault();
+				modal = document.querySelector(e.target.getAttribute("href"));
+				modal.style.display = "block";
+			}
+		}
+
+		<!-- this is for the closing of the modal itself using the close button -->
+		for (var i = 0; i < spans.length; i++) {
+			spans[i].onclick = function() {
+				for (var index in modals) {
+					if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+				}
+			}
+		}
+
+		<!-- this is for the closing of the modal itself as u click outside -->
+		window.onclick = function(event) {
+			if (event.target.classList.contains('modal')) {
+				for (var index in modals) {
+					if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+				}
+			}
+		}
+	</script>
+</body>
+</html>
+
+<!-- Sources 
+Breaking Stereotypes: Unhealthy Beauty Standards Group. (May 3, 2021). Re-Invent Beauty. Facebook. https://www.facebook.com/103825915201677/photos/a.103825941868341/104720795112189/
+
+Canadian Mental Health Association, BC Division. (2015). Body Image, Self-Esteem, and Mental Health. HereToHelp. https://www.heretohelp.bc.ca/infosheet/body-image-self-esteem-and-mental-health
+
+Caso, M. (Feb. 16, 2017). Unrealistic Beauty Standards: The Epidemic That’s Eating Our Youth. EntityMag. https://www.entitymag.com/unrealistic-beauty-standards/
+
+DeFino, J. (Feb. 25, 2021). Clean Beauty May be Non-Toxic, but it Still Sells Toxic Beauty Standards. HelloGiggles. https://hellogiggles.com/beauty/toxic-beauty-standards/
+
+Face Logo Design. (n.d.). Manubranding. https://www.manubranding.com/gallery
+
+Hayat, I.F. (n.d.). Information, and Home Logo. Flaticon. https://www.flaticon.com/authors/ilham-fitrotul-hayat
+	<div>Icons made by <a href="https://www.flaticon.com/authors/ilham-fitrotul-hayat" title="Ilham Fitrotul Hayat">Ilham Fitrotul Hayat</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+How To Create A Modal Box. (n.d.). W3Schools. https://www.w3schools.com/howto/howto_css_modals.asp
+
+Kulhade, V. K. (May 24, 2016). Support For Multiple Modal Single Page. StackOverflow. https://stackoverflow.com/questions/37402241/support-for-multiple-modal-single-page
+
+Safety First For Girls. (n. d.). The toxicity of beauty standards. The Catalyst. https://millardwestcatalyst.com/staff_name/photo-courtesy-of-safety-first-for-girls/
+--!>

@@ -49,11 +49,11 @@ body {
 	right: 550px;
 }
 
-.headerlogo1 > img {
+.headerlogo1 > a > img {
 	z-index: 1;
 	position: relative;
 	left: 1204px;
-	bottom: 283px;
+	bottom: 235px;
 	width: 40px;
 	height: 40px;
 }
@@ -61,20 +61,28 @@ body {
 .headerlogo2 > a > img {
 	z-index: 3;
 	position: relative;
-	left: 1143px;
-	bottom: 327px;
+	left: 1020px;
+	bottom: 280px;
 	width: 40px;
 	height: 40px;
 }
 
-.backtohome > a > p { 
-	color: black;
-	width: 100%;
-	text-align: right;
-	padding-right: 160px;
-	z-index: 3;
+.headerlogo3 > a > img {
+	z-index: 1;
 	position: relative;
-	bottom: 238px;
+	left: 1145px;
+	bottom: 325px;
+	width: 43px;
+	height: 43px;
+}
+
+.headerlogo4 > a > img {
+	z-index: 1;
+	position: relative;
+	left: 1085px;
+	bottom: 368px;
+	width: 37px;
+	height: 37px;
 }
 
 .search {
@@ -290,4 +298,21 @@ body {
 	position: relative;
 	padding-top: 50px;
 	padding-left: 85px;
+}
+
+.modal-navigation-bg {
+	position: relative;
+	background-color: white;
+	height: 350px;
+	width: 950px;
+}
+
+.modal-navigation > a {
+	position: relative;
+	padding-top: 10px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 35px;
+	color: #Eab19b;
+	text-decoration: none;
 }

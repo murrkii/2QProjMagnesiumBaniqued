@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Beauty's Toxicity: Toxicity </title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Marky Miguel C. Baniqued">
+	<meta name="keywords" content="HTML, CSS">
+	<meta name="revised" content="06-11-2020">
+	<link rel="stylesheet" type="text/css" href="../css/cssWebpage2.css">
+	<link rel="icon" type="images/jpeg" href="../images/logo.png">
+</head>
+
+<body>
+	<header id="wrapper"> <!-- this is to ensure that every element is the same when zoomed in our out, except for the modals -->
+	<header class="header">
+		<aside class="headerlogo">
+			<img src="../images/logo.png" title="Beauty's Toxicity Logo" alt="Website Logo">
+		</aside>
+		<header class="headertext1">
+			<h1>Beauty's Toxicity</h1>
+		</header>
+		
+		<section class="wrap"> <!-- this code block is for the search bar. u can type into it, but the searching process itself does not execute -->
+			<article class="search">
+				<input type="text" class="searchTerm" placeholder="Search Bar">
+				<button type="submit" class="searchButton">
+					<i class="fa fa-search"></i>
+				</button>
+			</article>
+		</section>
+		
+		<nav class="headerlogo1">
+			<a href="https://www.facebook.com/Beauty-Standards-Today-884378261643311/">
+				<img src="../images/facebook.png" title="Facebook" alt="Facebook Logo">
+			</a>
+		</nav>
+		<nav class="headerlogo2"> <!-- this code block is for the hyperlink back to the homepage -->
+			<a href="../index.html">
+				<img src="../images/home.png" title="Back to Home" alt="Home Logo">
+			</a>
+		</nav>
+		<nav class="headerlogo3">
+			<a href="https://twitter.com/remodelbehavior?lang=en">
+				<img src="../images/twitter.png" title="Twitter" alt="Twitter Logo">
+			</a>
+		</nav>
+		<nav class="headerlogo4">
+			<a href="https://www.instagram.com/girlgaze/">
+				<img src="../images/instagram.png" title="Instagram" alt="Instagram Logo">
+			</a>
+		</nav>
+	</header>
+
+	<header class="categoryTitle"> <!-- this code block is for the title -->
+		<p>Unhealthy Beauty Standards: Toxicity</p>
+	</header>
+
+	<aside class="clearfix"> <!-- this code block is for the list of categories to be clicked on. modals will pop up with information -->
+		<article class="column menu">
+			<ul>
+				<li><button class="modal-button" href="#myModal1">In-depth Toxicity</button></li>
+				<li><button class="modal-button" href="#myModal2">Gallery</button></li>
+				<li><button class="modal-button" href="#myModal3">Navigation</button></li>
+			</ul>
+		</article>
+	</aside>
+
+	<section id="myModal1" class="modal"> <!-- this is for modal number 1 -->
+		<section class="modal-content">
+			<header class="modal-header">
+				<span class="close">×</span>
+				<h2>In-depth Toxicity</h2>
+			</header>
+			<section class="modal-body">
+				<p>In today's world, unrealistic beauty standards are a scourge. When people 
+                look around, they see expectations of what they should look like all around them. 
+                This can result in mental health problems and other problems. It can also lead 
+                to people attempting to transform themselves in order to conform to society's 
+                expectations.</p>
+				<p>People may go to great efforts to attain the face or body they desire as a result 
+				of these ideals. Plastic surgery is becoming increasingly popular. People observe 
+				celebrities like Angelina Jolie and Kylie Jenner creating trends for big lips and 
+				decide they want to look like them. Botox operations have climbed by 759 percent 
+				since 2000, according to an Attn piece headlined "How Plastic Surgery Is Changing What 
+				It Means to Be Beautiful." The problem with plastic surgery is that it runs the danger 
+				of being botched, which can be harmful to a person's health. According to the Mayo Clinic's 
+				summary of cosmetic surgery, there is a risk of anesthesia-related problems, infection 
+				at the surgical site, fluid buildup beneath the skin, bleeding, scarring, and nerve 
+				damage. If it weren't for the aesthetic standards that force women to have these 
+				procedures, they wouldn't be at risk of these consequences.</p>
+			</section>
+			<footer class="modal-footer"> </footer>
+		</section>
+	</section>
+
+	<section id="myModal2" class="modal"> <!-- this is for modal number 2 -->
+		<section class="modal-content">
+			<header class="modal-header">
+				<span class="close">×</span>
+				<h2>Unhealthy Beauty Standards Gallery</h2>
+			</header>
+			<section class="modal-gallery-bg">
+				<aside class="modal-gallery">
+					<img src="../images/picture5.png" title="Girl looking into a mirror" alt="Picture 1: Girl looking into a mirror">
+					<img src="../images/picture6.png" title="Mirror with text" alt="Picture 2: Mirror with text">
+					<img src="../images/picture7.png" title="" alt="Picture 3:">
+					<img src="../images/picture8.png" title="" alt="Picture 4:">
+				</aside>
+			</section>
+			<footer class="modal-footer"> </footer>
+		</section>
+	</section>
+	
+	<section id="myModal3" class="modal"> <!-- this is for modal number 3 -->
+		<section class="modal-content">
+			<header class="modal-header">
+				<span class="close">×</span>
+				<h2>Navigation</h2>
+			</header>
+			<section class="modal-navigation-bg">
+				<nav class="modal-navigation">
+					<a href="../index.html">
+						<h3>HOME</h3>
+					</a>
+					<a href="webpage1.html">
+						<h3>DEFINITION</h3>
+					</a>
+					<a href="webpage3.html">
+						<h3>MENTAL ISSUES</h3>
+					</a>
+					<a href="webpage4.html">
+						<h3>SOLUTIONS</h3>
+					</a>
+				</nav>
+			</section>
+			<footer class="modal-footer"> </footer>
+		</section>
+	</section>
+	</header>
+
+	<script>
+		<!-- this script is for getting the button for the model -->
+		var btn = document.querySelectorAll("button.modal-button");
+
+		<!-- this is to ensure we can ahve multiple modals -->
+		var modals = document.querySelectorAll('.modal');
+
+		<!-- this is for the modal close button -->
+		var spans = document.getElementsByClassName("close");
+
+		<!-- this is for the opening of the model itself -->
+		for (var i = 0; i < btn.length; i++) {
+			btn[i].onclick = function(e) {
+				e.preventDefault();
+				modal = document.querySelector(e.target.getAttribute("href"));
+				modal.style.display = "block";
+			}
+		}
+
+		<!-- this is for the closing of the modal itself using the close button -->
+		for (var i = 0; i < spans.length; i++) {
+			spans[i].onclick = function() {
+				for (var index in modals) {
+					if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+				}
+			}
+		}
+
+		<!-- this is for the closing of the modal itself as u click outside -->
+		window.onclick = function(event) {
+			if (event.target.classList.contains('modal')) {
+				for (var index in modals) {
+					if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+				}
+			}
+		}
+	</script>
+</body>
+</html>
+
+<!-- Sources 
+Girl holding her hed infront of a mirror. (n.d.). Getty Images. HeloGiggles. https://hellogiggles.com/beauty/learning-to-love-my-dark-lips/
+
+Toxic Beauty Standards will not set my worth.(n.d.). Pinterest. Eat My News. https://www.eatmy.news/2021/04/how-disney-has-set-unrealistic-beauty.html
+
+Labyrinthave. (June 29, 20121). my art over the past few months on toxic beauty standards and social media. Twitter. https://twitter.com/labyrinthave/status/1409561040560570371?s=20&t=QL7AxQvflSiFBa0nIWuGWQ
+
+Mahuja, M.L. (January, 2015). Here’s How Filters On Social Media Are Enforcing A Toxic, Whitewashed Beauty Standard. Idiva. https://www.idiva.com/news-opinion/opinion/filters-on-social-media-are-enforcing-a-toxic-beauty-standard/18013950
+
+DeFino, J. (Feb. 25, 2021). Clean Beauty May be Non-Toxic, but it Still Sells Toxic Beauty Standards. HelloGiggles. https://hellogiggles.com/beauty/toxic-beauty-standards/
+
+Face Logo Design. (n.d.). Manubranding. https://www.manubranding.com/gallery
+
+Hayat, I.F. (n.d.). Information, and Home Logo. Flaticon. https://www.flaticon.com/authors/ilham-fitrotul-hayat
+		<div> Icons made by <a href="https://www.flaticon.com/authors/ilham-fitrotul-hayat" title="Ilham Fitrotul Hayat">Ilham Fitrotul Hayat</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+How To Create A Modal Box. (n.d.). W3Schools. https://www.w3schools.com/howto/howto_css_modals.asp
+
+Kulhade, V. K. (May 24, 2016). Support For Multiple Modal Single Page. StackOverflow. https://stackoverflow.com/questions/37402241/support-for-multiple-modal-single-page
+
+Safety First For Girls. (n. d.). The toxicity of beauty standards. The Catalyst. https://millardwestcatalyst.com/staff_name/photo-courtesy-of-safety-first-for-girls/
+
+Bay Area Digital Arts. (June 3, 2017). Beauty | Documentary on Societal Beauty Standards. YouTube. https://youtu.be/8eAL4JNQQU8
+--!>

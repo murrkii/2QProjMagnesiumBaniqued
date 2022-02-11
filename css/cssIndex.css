@@ -59,7 +59,7 @@ body {
 }
 
 .headerlogo2 > a > img {
-	z-index: 2;
+	z-index: 1;
 	position: relative;
 	left: 1105px;
 	bottom: 405px;
@@ -68,7 +68,7 @@ body {
 }
 
 .headerlogo3 > a > img {
-	z-index: 3;
+	z-index: 1;
 	position: relative;
 	left: 1010px;
 	bottom: 475px;

@@ -49,31 +49,31 @@ body {
 	right: 357px;
 }
 
-.headerlogo1 > img {
+.headerlogo1 > a > img {
 	z-index: 1;
 	position: relative;
 	left: 1200px;
-	bottom:340px;
+	bottom:337px;
 	width: 60px;
 	height: 60px;
 }
 
-.headerlogo2 > img {
+.headerlogo2 > a > img {
 	z-index: 2;
 	position: relative;
-	left: 1110px;
+	left: 1105px;
 	bottom: 405px;
-	width: 63px;
-	height: 63px;
+	width: 70px;
+	height: 70px;
 }
 
-.headerlogo3 > img {
+.headerlogo3 > a > img {
 	z-index: 3;
 	position: relative;
 	left: 1010px;
 	bottom: 475px;
-	width: 70px;
-	height: 70px;
+	width: 60px;
+	height: 60px;
 }
 
 .search {
@@ -152,7 +152,7 @@ body {
 	float: left;
 	width: 100%; 
 	padding: 0px;
-	margin-bottom: 39px;
+	margin-bottom: 30px;
 	background-color: #F1c2b1;
 	color: #ffffff;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);

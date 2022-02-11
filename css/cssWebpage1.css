@@ -59,7 +59,7 @@ body {
 }
 
 .headerlogo2 > a > img {
-	z-index: 3;
+	z-index: 1;
 	position: relative;
 	left: 1020px;
 	bottom: 280px;
